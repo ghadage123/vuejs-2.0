@@ -11,7 +11,7 @@
     </div>
 </template>
 
-<script>
+<script> //LARAVEL
     export default {
         props: ['value'],
         methods: {
