@@ -11,7 +11,7 @@
     </div>
 </template>
 
-<script> //LARAVEL
+<script> //LARAVEL + VUEJS
     export default {
         props: ['value'],
         methods: {
