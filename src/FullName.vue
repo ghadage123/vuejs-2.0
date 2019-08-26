@@ -11,7 +11,7 @@
     </div>
 </template>
 
-<script> //LARAVEL + VUEJS
+<script> //LARAVEL + VUEJS this  is my code
     export default {
         props: ['value'],
         methods: {
@@ -22,12 +22,16 @@
                 } else {
                     name = this.firstName + ' ' + event.target.value;
                 }
+
+
+        
                 this.value = name;
                 this.$emit('input', this.value);
             }
         },
         computed: {
             firstName() {
+
                 return this.value.split(" ")[0];
             },
             lastName() {
