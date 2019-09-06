@@ -2,23 +2,24 @@
     <div class="container">
         <div class="row">
             <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">
-             
-             	<h1>routing</h1>
-             	<hr>
-             	<app-headerR></app-headerR>
-             	<router-view></router-view>
-				
-			</div>
-		</div>
-		
-	</div>
+                <h1>Routing</h1>
+                <hr>
+                <router-view name="header-top"></router-view>
+                <router-view></router-view>
+                <router-view name="header-bottom"></router-view>
+            </div>
+        </div>
+    </div>
 </template>
-<script>
-import HeaderR from './components/HeaderR.vue';
-	export default {
-		components: {
-			appHeaderR: HeaderR
-		}
 
-	}
+<script>
+    import Header from './components/Header.vue';
+    export default {
+        components: {
+            appHeader: Header
+        }
+    }
 </script>
+
+<style>
+</style>
